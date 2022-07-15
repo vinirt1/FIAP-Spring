@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: E14t2125$
+    driver-class-name: com.mysql.jdbc.Driver
+  batch:
+    jdbc:
+      initialize-schema: always # never | embedded
+      schema: classpath:schema.sql
+
+input:
+  file: .\files\lista_alunos.txt
