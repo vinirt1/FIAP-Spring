@@ -44,6 +44,13 @@ public class Aluno {
         this.turma = alunoCreateUpdateDTO.getTurma();
     }
 
+    public Aluno(Long id, Integer matricula, String nome, String turma) {
+        this.id = id;
+        this.matricula = matricula;
+        this.nome = nome;
+        this.turma = turma;
+    }
+
     public Long getId() {
         return id;
     }
