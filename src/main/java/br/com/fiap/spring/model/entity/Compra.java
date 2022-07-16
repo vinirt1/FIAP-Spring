@@ -56,6 +56,19 @@ public class Compra {
         this.dataHora = compraCreateDTO.getDataHora();
     }
 
+    public Compra(Long id, Long numeroCartao, String bandeiraCartao, String estabelecimento, BigDecimal valor,
+            LocalDateTime dataHora, Integer status, Aluno aluno) {
+
+        this.id = id;
+        this.numeroCartao = numeroCartao;
+        this.bandeiraCartao = bandeiraCartao;
+        this.estabelecimento = estabelecimento;
+        this.valor = valor;
+        this.dataHora = dataHora;
+        this.status = status;
+        this.aluno = aluno;
+    }
+
     public Long getId() {
         return id;
     }
