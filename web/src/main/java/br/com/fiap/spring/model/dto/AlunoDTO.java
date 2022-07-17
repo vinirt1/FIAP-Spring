@@ -15,6 +15,13 @@ public class AlunoDTO {
     public AlunoDTO() {
     }
 
+    public AlunoDTO(Long id, Integer matricula, String nome, String turma) {
+        this.id = id;
+        this.matricula = matricula;
+        this.nome = nome;
+        this.turma = turma;
+    }
+
     public AlunoDTO(Aluno aluno) {
         this.id = aluno.getId();
         this.matricula = aluno.getMatricula();

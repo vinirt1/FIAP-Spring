@@ -26,6 +26,10 @@ para carregar os clientes faça o start do projeto atráves do comando abaixo no
 
 ./mvnw spring-boot:run
 
+# Executar testes
+./mvnw test
+
+# Documentação Swagger
 OBS.: 
 O arquivo de clientes deve ser carregado imediatamente após startar o servidor web.
 Caso tenha sido feito algum cadastro de clientes ou compras uma nova carga do arquivo vai reiniciar os bancos.
