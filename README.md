@@ -30,13 +30,16 @@ OBS.:
 O arquivo de clientes deve ser carregado imediatamente após startar o servidor web.
 Caso tenha sido feito algum cadastro de clientes ou compras uma nova carga do arquivo vai reiniciar os bancos.
 
-# 3 -  Documentação Swagger
+# 3 - Gerar Extrato
+/api/alunos/{id}/fatura
+
+# 4 -  Documentação Swagger
 http://localhost:8080/swagger-ui/index.html
 
 https://www.baeldung.com/spring-rest-openapi-documentation
 
 
-# 4 - Justificativas técnicas
+# 5 - Justificativas técnicas
 O Banco de dados escolhido foi o MySQL. Um banco de dados relacional possui a vantagem de persistência de dados
 e desvantagem de possuir maior latência, porém por se tratar de transações de cartão de crédito
 um banco de dados relacional é mais seguro para uma melhor garantia de consistência de dados.
