@@ -8,8 +8,21 @@ Marcos Alencar Arruda - RM344803
 Vinicius Rodrigues Tonha - RM344810
 
 # Pré-requisitos
-Banco de dados MySQL rodando na porta 3306 
+Banco de dados MySQL rodando na porta 3306 com o schema test configurado.
 Ex.: jdbc:mysql://localhost:3306/test?serverTimezone=UTC
+
+Como facilitador existe um docker-compose com a conexão correta do banco de dados e com a database test e senha root configurada. 
+
+para inicializar o banco de dados basta utilizar o comando na raiz do projeto:
+docker-compose up
+
+Obs.: é necessário o docker e o docker compose configurado e instalado
+
+documentação do docker server para linux: https://docs.docker.com/engine/install/ubuntu/
+
+Docker Desktop para MacOsx: https://docs.docker.com/desktop/install/mac-install/
+
+Documentação do docker compose:  https://docs.docker.com/compose/
 
 # Rodar projeto
 ### 1 - Startar o servidor web.
@@ -21,7 +34,11 @@ Primeiramente startar o servidor web dentro do diretório web com o comando abai
 
 ### 2 - Carga Inicial dos clientes
 
-O Diretório batch contém o projeto que carrega o arquivo inicial de clientes. 
+O Diretório batch contém o projeto que carrega o arquivo inicial de clientes. O arquivo de clientes está no sub diretório chamado files.
+
+Caso seja necessário alterar qualquer dado de conexão ou localização do arquivo de clientes o caminho para o arquivo de configuração é o seguinte:
+batch/src/main/resources/application.yaml
+ 
 para carregar os clientes faça o start do projeto atráves do comando abaixo no diretório batch:
 
 ./mvnw spring-boot:run
